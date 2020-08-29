@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+}
+
+* + * {
+	margin-top: 1em;
+}
+
+html {
+	--body-background: var(--white);
+	--body-border: 8px solid var(--alfa-blue);
+	--body-base-font-size: var(--fs-base-small);
+	--outline-color: var(--green);
+	--outline-size: 0 0 0 4px;
+	height: 100%;
+
+	@media (min-width: 768px) {
+		--body-base-font-size: var(--fs-base-normal);
+	}
+}
+
+body {
+	background: var(--body-background);
+	border: var(--body-border);
+	color: var(--balck);
+	font-family: var(--ff-secondary);
+	font-size: var(--body-base-font-size);
+	font-weight: var(--fw-normal);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	width: 100%;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-semibold);
+}

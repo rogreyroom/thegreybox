@@ -1,0 +1,57 @@
+.button {
+	--button-link-text-color: var(--blue);
+	--button-link-text-hover-color: var(--dark-green);
+	--button-link-underline-color: var(--green);
+	--button-button-text-color: var(--white);
+	--button-button-text-hover-color: var(--blue);
+	--button-button-bg-color: var(--blue);
+	--button-button-bg-hover-color: var(--white);
+	--button-outline-color: var(--outline-color);
+	--button-outline-size: var(--outline-size);
+	--button-padding: .75em 1.25em;
+	--button-transition: 0.5s ease;
+
+	text-decoration: none;
+	padding: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border: none;
+	transition: var(--button-transition);
+
+	&--link {
+		color: var(--button-link-text-color);
+
+		&:hover {
+			--button-link-text-color: var(--button-link-text-hover-color);
+			text-decoration: underline solid var(--button-link-underline-color);
+		}
+
+		&:focus {
+			outline: var(--button-outline-color);
+			box-shadow: var(--button-outline-size) var(--button-outline-color);
+		}
+	}
+
+	&--button {
+		background-color: var(--button-button-bg-color);
+		color: var(--button-button-text-color);
+		padding: var(--button-padding);
+
+		&:hover {
+			--button-button-text-color: var(--button-button-text-hover-color);
+			--button-button-bg-color: var(--button-button-bg-hover-color);
+		}
+
+		&:focus {
+			outline: var(--button-outline-color);
+			box-shadow: var(--button-outline-size) var(--button-outline-color);
+		}
+	}
+
+	&--extra {
+		font-size: var(--heading-01);
+	}
+}

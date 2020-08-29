@@ -1,0 +1,17 @@
+.projects {
+	--header-font-size: var(--heading-04);
+	--header-font-color: var(--black);
+	--body-font-color: var(--grey);
+
+	margin: 48px 24px;
+
+	&__header {
+		font-size: var(--header-font-size);
+		color: var(--header-font-color);
+	}
+
+	&__content {
+		color: var(--body-font-color);
+		margin-bottom: 48px;
+	}
+}

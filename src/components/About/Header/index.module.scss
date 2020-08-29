@@ -1,0 +1,12 @@
+.header {
+	--header-font-size: var(--heading-03);
+	--header-font-color: var(--black);
+
+	font-size: var(--header-font-size);
+	color: var(--header-font-color);
+
+	&__span::after {
+		content: '\A';
+		white-space: pre;
+	}
+}

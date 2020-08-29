@@ -1,0 +1,23 @@
+.header {
+	--header-font-size: var(--heading-05);
+	--header-font-color: var(--grey);
+
+	--bullet-color-01: var(--grey);
+	--bullet-color-02: var(--grey);
+	--bullet-color-03: var(--grey);
+
+	font-size: var(--header-font-size);
+	color: var(--header-font-color);
+
+	&--blue {
+		color: var(--bullet-color-01);
+	}
+
+	&--light-blue {
+		color: var(--bullet-color-02);
+	}
+
+	&--green {
+		color: var(--bullet-color-03);
+	}
+}

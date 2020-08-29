@@ -1,0 +1,16 @@
+.skills {
+	--header-font-size: var(--heading-04);
+	--header-font-color: var(--black);
+
+	margin: 24px;
+
+	&__title {
+		font-size: var(--header-font-size);
+		color: var(--header-font-color);
+	}
+
+	&__skill-set {
+		margin-top: 24px;
+		margin-bottom: 48px;
+	}
+}

@@ -1,0 +1,54 @@
+.spacer {
+	margin: 24px;
+}
+
+.information {
+	--body-text-color: var(--grey);
+	--button-link-text-color: var(--blue);
+	--button-link-text-hover-color: var(--white);
+	--button-link-text-active-color: var(--lighter-blue);
+	--button-link-bg-color: var(--lighter-blue);
+	--button-link-bg-hover-color: var(--blue);
+	--button-link-bg-active-color: var(--dark-blue);
+	--button-outline-color: var(--outline-color);
+	--button-outline-size: var(--outline-size);
+	--button-transition: 0.5s ease;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__body {
+		color: var(--body-text-color);
+	}
+
+	&__link {
+		text-decoration: none;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		padding: .75em 1.25em;
+		transition: var(--button-transition);
+		background-color: var(--button-link-bg-color);
+		color: var(--button-link-text-color);
+		max-width: min-content;
+
+		&:hover {
+			--button-link-text-color: var(--button-link-text-hover-color);
+			--button-link-bg-color: var(--button-link-bg-hover-color);
+		}
+
+		&:focus {
+			outline: var(--button-outline-color);
+			box-shadow: var(--button-outline-size) var(--button-outline-color);
+		}
+
+		&:active {
+			--button-link-text-color: var(--button-link-text-active-color);
+			--button-link-bg-color: var(--button-link-bg-active-color);
+		}
+	}
+}

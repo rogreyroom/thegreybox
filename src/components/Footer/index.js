@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<section className={styles.contact}>
+			<section className={styles.contact} id='contact'>
 				<h2 className={styles.contact__title}>Contact Me</h2>
 				<p className={styles.contact__description}>
 					I’m open for new opportunities. If you have one for me we should talk!

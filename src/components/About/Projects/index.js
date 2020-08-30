@@ -36,7 +36,7 @@ const Projects = ({ title, color }) => {
 	const icons = data.icons.edges;
 
 	return (
-		<section className={styles.projects}>
+		<section className={styles.projects} id='projects'>
 			<h2 className={styles.projects__header}>My projects</h2>
 			<p className={styles.projects__content}>
 				I create practically every day constantly developing my skills and extending my knowledge. Here are some

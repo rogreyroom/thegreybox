@@ -42,10 +42,11 @@ const Projects = ({ title, color }) => {
 				I create practically every day constantly developing my skills and extending my knowledge. Here are some
 				of my projects including those I am really proud of.
 			</p>
-			{edges.map(({ node }, index) => {
-				console.log('Projects', node);
-				return <Card data={node} icons={icons} key={index} />;
-			})}
+			<div className={styles.projects__cards}>
+				{edges.map(({ node }, index) => {
+					return <Card data={node} icons={icons} key={index} />;
+				})}
+			</div>
 		</section>
 	);
 };

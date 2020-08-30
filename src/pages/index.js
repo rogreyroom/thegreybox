@@ -26,7 +26,7 @@ const AboutIndex = ({ data, location }) => {
 	return (
 		<>
 		<main>
-			<header className={styles.spacer}>
+			<header className={`${styles.spacer} ${styles.header}`}>
 				<Face />
 				<Header />
 			</header>

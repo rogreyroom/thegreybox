@@ -1,0 +1,94 @@
+.footer {
+	--footer-background: var(--dark-blue);
+
+	background: var(--footer-background);
+	padding: 48px 24px;
+
+	@media screen and (min-width: 1100px) {
+		margin: 0 auto;
+		padding: 6rem 4rem;
+	}
+}
+
+.contact {
+	--contact-header-font-family: var(--ff-primary);
+	--contact-header-font-size: var(--heading-03);
+	--contact-header-color: var(--green);
+	--contact-font-family: var(--ff-secondary);
+	--contact-font-size: var(--body-normal);
+	--contact-text-color: var(--white);
+	--contact-link-color: var(--lighter-blue);
+	--contact-link-hover-color: var(--green);
+	--contact-active-link-color: var(--blue);
+
+	--button-outline-color: var(--outline-color);
+	--button-outline-size: var(--outline-size);
+	--button-transition: 0.5s ease;
+
+	max-width: 1100px;
+
+	@media screen and (min-width: 712px) {
+		--contact-header-font-size: var(--heading-02);
+	}
+
+	@media screen and (min-width: 1100px) {
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-family: var(--contact-header-font-family);
+		font-size: var(--contact-header-font-size);
+		color: var(--contact-header-color);
+	}
+
+	&__description {
+		font-family: var(--contact-font-family);
+		font-size: var(--contact-font-size);
+		color: var(--contact-text-color);
+	}
+
+	&__social-list {
+		list-style: none;
+		margin: 1rem 0 0 0;
+		padding: 0;
+	}
+
+	&__social-link {
+		&:hover {
+			svg path {
+				transition: var(--button-transition);
+				fill: var(--contact-link-hover-color);
+			}
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		transition: var(--button-transition);
+		color: var(--contact-link-color);
+		max-width: min-content;
+
+		&:hover {
+			--contact-link-color: var(--contact-link-hover-color);
+			border-bottom: 1px solid var(--contact-link-color);
+
+			svg path {
+				fill: var(--contact-link-hover-color);
+			}
+		}
+
+		&:focus {
+			outline: var(--button-outline-color);
+			box-shadow: var(--button-outline-size) var(--button-outline-color);
+		}
+
+		&:active {
+			--contact-link-color: var(--contact-link-hover-color);
+		}
+	}
+}

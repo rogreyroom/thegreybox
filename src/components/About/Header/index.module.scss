@@ -1,0 +1,22 @@
+.header {
+	--header-font-size: var(--heading-03);
+	--header-font-color: var(--black);
+
+	font-size: var(--header-font-size);
+	color: var(--header-font-color);
+
+	@media screen and (min-width: 712px) {
+		--header-font-size: var(--heading-02);
+		max-width: 30ch;
+		margin-top: 4rem;
+	}
+
+	@media screen and (min-width: 1100px) {
+		--header-font-size: var(--heading-01);
+	}
+
+	&__span::after {
+		content: '\A';
+		white-space: pre;
+	}
+}

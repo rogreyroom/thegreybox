@@ -1,5 +1,6 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
 
-import "prismjs/themes/prism.css"
+import 'typeface-poppins';
+import 'typeface-open-sans';
+import 'normalize.css';
+import './src/styles/global-styles.scss';

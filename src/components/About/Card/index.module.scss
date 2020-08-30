@@ -49,6 +49,10 @@
 		border-radius: 100% 0 10px 0;
 	}
 
+	&:hover {
+		box-shadow: 10px 10px 20px var(--lighter-blue-01), -10px -10px 20px var(--white-01);
+	}
+
 	&__content {
 		grid-area: content;
 		font-size: var(--card-body-size);

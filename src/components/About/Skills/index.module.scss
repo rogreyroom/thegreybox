@@ -8,14 +8,14 @@
 
 	@media screen and (min-width: 712px) {
 		--header-font-size: var(--heading-03);
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		// flex-direction: row;
+		// flex-wrap: wrap;
+		// justify-content: space-between;
 	}
 
 	@media screen and (min-width: 1100px) {
-		max-width: 1100px;
 		--header-font-size: var(--heading-02);
+		max-width: 1100px;
 		margin: 0 auto 48px auto;
 		padding: 0 4rem;
 	}
@@ -30,5 +30,9 @@
 		min-width: 300px;
 		margin-top: 24px;
 		margin-bottom: 48px;
+
+		@media screen and (min-width: 1100px) {
+			display: flex;
+		}
 	}
 }

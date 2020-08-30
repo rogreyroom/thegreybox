@@ -30,7 +30,6 @@ const AboutIndex = ({ data, location }) => {
 				<Face />
 				<Header />
 			</header>
-			<Question />
 			<section className={`${styles.spacer} ${styles.information}`}>
 				<p className={styles.information__body}>
 					Check <Button to='#skills' text='my skills' variant='text' /> section for the detailed list on my
@@ -38,10 +37,11 @@ const AboutIndex = ({ data, location }) => {
 					<Button to='#projects' text='my projects' variant='text' />. And if I can help you with your current
 					project, feel free to <Button to='#contact' text='contact me' variant='text' />.
 				</p>
-				<a className={`${styles.spacer} ${styles.information__link}`} href='mailto:robert@adamczewski.me'>
+				<a className={`${styles.information__link}`} href='mailto:robert@adamczewski.me'>
 					robert@adamczewski.me
 				</a>
 			</section>
+			<Question />
 			<Skills />
 			<Projects />
 		</main>

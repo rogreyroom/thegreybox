@@ -2,7 +2,12 @@
 	--footer-background: var(--dark-blue);
 
 	background: var(--footer-background);
-	padding: 3rem 1.5rem;
+	padding: 48px 24px;
+
+	@media screen and (min-width: 1100px) {
+		margin: 0 auto;
+		padding: 6rem 4rem;
+	}
 }
 
 .contact {
@@ -19,6 +24,16 @@
 	--button-outline-color: var(--outline-color);
 	--button-outline-size: var(--outline-size);
 	--button-transition: 0.5s ease;
+
+	max-width: 1100px;
+
+	@media screen and (min-width: 712px) {
+		--contact-header-font-size: var(--heading-02);
+	}
+
+	@media screen and (min-width: 1100px) {
+		margin: 0 auto;
+	}
 
 	&__title {
 		font-family: var(--contact-header-font-family);

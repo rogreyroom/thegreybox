@@ -22,9 +22,9 @@
 	margin-bottom: 48px;
 	box-shadow: 20px 20px 40px var(--lighter-blue-01), -20px -20px 40px var(--white-01);
 	position: relative;
-	max-width: 300px;
+	max-width: 330px;
 	width: 100%;
-	min-height: 200px;
+	min-height: 225px;
 	display: grid;
 	grid-template-areas: 'content' 'footer';
 	grid-template-rows: 1fr auto;
@@ -32,6 +32,10 @@
 
 	@media screen and (min-width: 712px) {
 		margin-top: 0;
+	}
+
+	@media screen and (min-width: 712px) {
+		min-height: 250px;
 	}
 
 	&::after {

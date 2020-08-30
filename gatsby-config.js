@@ -5,8 +5,9 @@ module.exports = {
 			name: `Robert Adamczewski`,
 			summary: `who lives and works in Racibórz building useful things.`
 		},
-		description: `Personal website build with Gatsby js`,
-		siteUrl: `https://thegreybox.netlify.app/`
+		description: `Robert Adamczewski frontend developer homepage. This is the place where I share some information about me and my frontend skills.`,
+		siteUrl: `https://adamczewski.me/`,
+		image: `content/assets/cover.png`
 	},
 	plugins: [
 		{
@@ -57,13 +58,13 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Gatsby Starter Blog`,
-				short_name: `GatsbyJS`,
+				name: `Robert Adamczewski portfolio`,
+				short_name: `Robert Adamczewski`,
 				start_url: `/`,
 				background_color: `#ffffff`,
-				theme_color: `#663399`,
+				theme_color: `#D9E6FC`,
 				display: `minimal-ui`,
-				icon: `content/assets/gatsby-icon.png`
+				icon: `content/assets/icon-512x512.png`
 			}
 		},
 		`gatsby-plugin-react-helmet`,

@@ -3,7 +3,7 @@ import React from 'react';
 
 // import Bio from "../components/bio"
 // import Layout from "../components/layout"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 // import { rhythm } from "../utils/typography"
 // import 'normalize.css'
 
@@ -25,6 +25,7 @@ const AboutIndex = ({ data, location }) => {
 
 	return (
 		<>
+		<SEO title="Hello" />
 		<main>
 			<header className={`${styles.spacer} ${styles.header}`}>
 				<Face />

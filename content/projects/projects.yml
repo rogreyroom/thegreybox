@@ -1,3 +1,24 @@
+- name: 'RTS'
+  type: 'github'
+  description: 'It is a project to help some small companies keep employees work timetable as well as evaluate employees and generate monthly reports.'
+  cloneUrl: 'https://github.com/rogreyroom/trs-app.git'
+  githubUrl: 'https://github.com/rogreyroom/trs-app'
+  url: ''
+  languages:
+    - name: 'React'
+    - name: 'Next js'
+    - name: 'Styled-components'
+
+- name: 'cmentarz2'
+  type: 'github'
+  description: 'Cmentarz 2 - aplikacja do obsługi cmentarza.'
+  cloneUrl: 'https://github.com/rogreyroom/cmentarz2.git'
+  githubUrl: 'https://github.com/rogreyroom/cmentarz2'
+  url: ''
+  languages:
+    - name: 'Vue'
+    - name: 'JavaScript'
+
 - name: 'caesar-rot-react'
   type: 'github'
   description: 'Caesar cipher ROT app. Practice project using Create React App.'
@@ -67,38 +88,6 @@
     - name: 'HTML'
     - name: 'CSS'
     - name: 'JavaScript'
-
-- name: 'cmentarz2'
-  type: 'github'
-  description: 'Cmentarz 2 - aplikacja do obsługi cmentarza.'
-  cloneUrl: 'https://github.com/rogreyroom/cmentarz2.git'
-  githubUrl: 'https://github.com/rogreyroom/cmentarz2'
-  url: ''
-  languages:
-    - name: 'Vue'
-    - name: 'JavaScript'
-
-- name: 'calc'
-  type: 'github'
-  description: 'Calculator project based on a free PSD file.'
-  cloneUrl: 'https://github.com/rogreyroom/calc.git'
-  githubUrl: 'https://github.com/rogreyroom/calc'
-  url: 'https://rogreyroom.github.io/calc/'
-  languages:
-    - name: 'JavaScript'
-    - name: 'CSS'
-    - name: 'HTML'
-
-- name: 'caesar13'
-  type: 'github'
-  description: 'Caesar cipher ROT13.'
-  cloneUrl: 'https://github.com/rogreyroom/caesar13.git'
-  githubUrl: 'https://github.com/rogreyroom/caesar13'
-  url: 'https://rogreyroom.github.io/caesar13/'
-  languages:
-    - name: 'JavaScript'
-    - name: 'CSS'
-    - name: 'HTML'
 
 - name: 'the trAst'
   type: 'site'

@@ -54,6 +54,16 @@
 	}
 
 	&__social-link {
+		text-decoration: none;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+
+		& span {
+			color: var(--contact-link-color);
+			margin: 0;
+			margin-left: 1rem;
+		}
 		&:hover {
 			svg path {
 				transition: var(--button-transition);

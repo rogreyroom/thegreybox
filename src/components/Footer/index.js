@@ -32,6 +32,7 @@ const Footer = () => {
 									fill='#f6f6f9'
 								/>
 							</svg>
+							<span>rogreyroom</span>
 						</a>
 					</li>
 				</ul>

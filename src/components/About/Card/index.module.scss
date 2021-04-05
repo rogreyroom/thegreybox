@@ -66,6 +66,7 @@
 
 	&__header {
 		display: flex;
+		align-items: center;
 	}
 
 	&__image {
@@ -77,6 +78,7 @@
 		grid-area: header;
 		font-family: var(--card-header-ff);
 		font-size: var(--card-header-size);
+		line-height: var(--card-header-size);
 		color: var(--card-header-color);
 		margin-top: 0;
 		margin-left: 1rem;

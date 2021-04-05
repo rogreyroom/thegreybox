@@ -1,4 +1,4 @@
-- name: 'RTS'
+- name: 'TRS'
   type: 'github'
   description: 'It is a project to help some small companies keep employees work timetable as well as evaluate employees and generate monthly reports.'
   cloneUrl: 'https://github.com/rogreyroom/trs-app.git'

@@ -30,7 +30,6 @@
   url: 'https://rogreyroom.github.io/caesar-rot-react/'
   languages:
     - name: 'TypeScript'
-    - name: 'JavaScript'
     - name: 'HTML'
     - name: 'SCSS'
 
@@ -43,7 +42,6 @@
   url: 'https://rogreyroom.github.io/caesar-rot/'
   languages:
     - name: 'TypeScript'
-    - name: 'JavaScript'
     - name: 'HTML'
     - name: 'SCSS'
     - name: 'Jest'

@@ -11,6 +11,7 @@ const Projects = ({ title, color }) => {
 				edges {
 					node {
 						name
+						displayName
 						type
 						description
 						url
@@ -30,10 +31,19 @@ const Projects = ({ title, color }) => {
 					}
 				}
 			}
+			images: allFile(filter: { absolutePath: { regex: "/images/" } }) {
+				edges {
+					node {
+						publicURL
+						name
+					}
+				}
+			}
 		}
 	`);
 	const { edges } = data.allProjectsYaml;
 	const icons = data.icons.edges;
+	const images = data.images.edges;
 
 	return (
 		<section className={styles.projects} id='projects'>
@@ -44,7 +54,7 @@ const Projects = ({ title, color }) => {
 			</p>
 			<div className={styles.projects__cards}>
 				{edges.map(({ node }, index) => {
-					return <Card data={node} icons={icons} key={index} />;
+					return <Card data={node} icons={icons} images={images} key={index} />;
 				})}
 			</div>
 		</section>

@@ -1,4 +1,5 @@
-- name: 'TRS'
+- name: 'trs'
+  displayName: 'TRS - time registration system'
   type: 'github'
   description: 'It is a project to help some small companies keep employees work timetable as well as evaluate employees and generate monthly reports.'
   cloneUrl: 'https://github.com/rogreyroom/trs-app.git'
@@ -10,6 +11,7 @@
     - name: 'Styled-components'
 
 - name: 'cmentarz2'
+  displayName: 'Cmentarz'
   type: 'github'
   description: 'Cmentarz 2 - aplikacja do obsługi cmentarza.'
   cloneUrl: 'https://github.com/rogreyroom/cmentarz2.git'
@@ -20,6 +22,7 @@
     - name: 'JavaScript'
 
 - name: 'caesar-rot-react'
+  displayName: 'Caesar ROT React'
   type: 'github'
   description: 'Caesar cipher ROT app. Practice project using Create React App.'
   cloneUrl: 'https://github.com/rogreyroom/caesar-rot-react.git'
@@ -32,6 +35,7 @@
     - name: 'SCSS'
 
 - name: 'caesar-rot'
+  displayName: 'Caesar ROT TypeScript'
   type: 'github'
   description: 'Caesar cipher ROT app. Practice project using Typescript.'
   cloneUrl: 'https://github.com/rogreyroom/caesar-rot.git'
@@ -45,6 +49,7 @@
     - name: 'Jest'
 
 - name: 'caesar13'
+  displayName: 'Caesar ROT JavaScript'
   type: 'github'
   description: 'Caesar cipher ROT app. Practice project using vanilla JavaScript.'
   cloneUrl: 'https://github.com/rogreyroom/caesar13.git'
@@ -57,6 +62,7 @@
     - name: 'Jest'
 
 - name: 'hydro-app'
+  displayName: 'Hydro App'
   type: 'github'
   description: 'PWA hydro-app. The application to count how much water you drink daily.'
   cloneUrl: 'https://github.com/rogreyroom/hydro-app.git'
@@ -68,8 +74,9 @@
     - name: 'CSS'
 
 - name: 'simple-editor'
+  displayName: 'Notepad'
   type: 'github'
-  description: 'simple localStorage notebook'
+  description: 'Simple localStorage notebook'
   cloneUrl: 'https://github.com/rogreyroom/simple-editor.git'
   githubUrl: 'https://github.com/rogreyroom/simple-editor'
   url: 'https://rogreyroom.github.io/simple-editor/'
@@ -78,9 +85,10 @@
     - name: 'CSS'
     - name: 'HTML'
 
-- name: 'wtf-homepage'
+- name: 'homepage'
+  displayName: 'Homepage'
   type: 'github'
-  description: 'wtf homepage project.'
+  description: 'Practice project.'
   cloneUrl: 'https://github.com/rogreyroom/wtf-homepage.git'
   githubUrl: 'https://github.com/rogreyroom/wtf-homepage'
   url: 'https://rogreyroom.github.io/wtf-homepage'
@@ -89,7 +97,8 @@
     - name: 'CSS'
     - name: 'JavaScript'
 
-- name: 'the trAst'
+- name: 'the-trast'
+  displayName: 'the trAst'
   type: 'site'
   description: 'Local Rock band.'
   cloneUrl: ''
@@ -100,7 +109,8 @@
     - name: 'CSS'
     - name: 'HTML'
 
-- name: 'Ema Brzezie Spółka z o.o.'
+- name: 'ema-brzezie'
+  displayName: 'Ema Brzezie Spółka z o.o.'
   type: 'site'
   description: 'Local producer of welding fluxes.'
   cloneUrl: ''
@@ -111,7 +121,8 @@
     - name: 'HTML'
     - name: 'CSS'
 
-- name: 'Dzika Róża Restaurant'
+- name: 'dzika-roza'
+  displayName: 'Dzika Róża Restaurant'
   type: 'site'
   description: 'Local restaurant website. Very old one but still kicking 😁'
   cloneUrl: ''

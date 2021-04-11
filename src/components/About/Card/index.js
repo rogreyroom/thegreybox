@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './index.module.scss';
 
-const getIconUrl = (type, iconsArr) => {
-	const icon = iconsArr.filter(({ node: { name } }) => name === type);
-	return icon[0].node.publicURL;
+const getPictureUrl = (pictureName, pictureArr) => {
+	const picture = pictureArr.filter(({ node: { name } }) => name === pictureName);
+	return picture[0]?.node.publicURL;
 };
 
 // const handleTabPress = e => {
@@ -23,17 +23,17 @@ const copyGithubCloneLink = url => {
 	document.removeEventListener('copy', listener);
 };
 
-const Card = ({ data, icons }) => {
-	const { name, type, description, url, githubUrl, cloneUrl, languages } = data;
+const Card = ({ data, icons, images }) => {
+	const { name, displayName, type, description, url, githubUrl, cloneUrl, languages } = data;
 
 	return (
 		<section className={styles.card}>
 			<div className={styles.card__content}>
 				<header className={styles.card__header}>
-					<img src={getIconUrl(type, icons)} alt={`A ${type} icon`} className={styles.card__image} />
-
-					<h3 className={styles.card__title}>{name}</h3>
+					<img src={getPictureUrl(type, icons)} alt={`A ${type} icon`} className={styles.card__icon} />
+					<h3 className={styles.card__title}>{displayName}</h3>
 				</header>
+				<img src={getPictureUrl(name, images)} alt={`${displayName}`} className={styles.card__image} />
 				<p className={styles.card__description}>{description}</p>
 				<section className={styles.card__languages}>
 					<ul className={styles.languages__list}>
@@ -61,7 +61,7 @@ const Card = ({ data, icons }) => {
 								className={styles.card__link}
 							>
 								<img
-									src={getIconUrl('live', icons)}
+									src={getPictureUrl('live', icons)}
 									alt={`A live preview icon`}
 									className={styles.card__image}
 								/>
@@ -80,7 +80,7 @@ const Card = ({ data, icons }) => {
 								className={styles.card__link}
 							>
 								<img
-									src={getIconUrl('code', icons)}
+									src={getPictureUrl('code', icons)}
 									alt={`A github preview icon`}
 									className={styles.card__image}
 								/>
@@ -96,7 +96,7 @@ const Card = ({ data, icons }) => {
 								className={styles.card__button}
 							>
 								<img
-									src={getIconUrl('clone', icons)}
+									src={getPictureUrl('clone', icons)}
 									alt={`A clone GitHub repo icon`}
 									className={styles.card__image}
 								/>

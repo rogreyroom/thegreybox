@@ -60,7 +60,7 @@
 		font-size: var(--card-body-size);
 		color: var(--card-body-color);
 		display: grid;
-		grid-template-areas: 'icon header' 'image image' 'description description' 'languages languages';
+		grid-template-areas: 'header' 'image' 'description' 'languages';
 
 		z-index: 1;
 		position: relative;
